@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="author" content="spchen38@163.com">
+	<title>轰趴怎么玩？绝对由你！</title>
+	<link rel="stylesheet" href="src/css/share.css">
+	<script type="text/javascript" src="assets/lib/rem.js"></script>
+</head>
+<body>
+	<div class="container">
+		<img class="logo center" src="assets/art/logo.png" alt="logo">
+		<div class="letsParty center">
+			<span class="city bg-common"></span>
+			<span class="scene bg-common"></span>
+			<span class="theme bg-common"></span>
+			<span class="drink bg-common"></span>
+		</div>
+		<p class="fight"><span class="nickname"></span><br>TA的轰趴<span>STYLE</span>长这样, 你的呢？</p>
+		<a class="go center"></a>
+	</div>
+	<span class="detail bg-common"></span>
+	<div class="detail_float">
+		<h3 class="detail_title">活动细则<span class="d_close bg-common"></span></h3>
+		<div class="inner center">
+			<ul class="terms">
+				<li>一、活动名称：今夏混PA 绝对由你</li>
+				<li>二、活动时间：2016年8月29日 - 2016年9月9日</li>
+				<li>三、活动主办方：保乐力加（中国）贸易有限公司</li>
+				<li>四、参与资格：<br>本活动仅限中国大陆地区（港、澳、台地区除外）年满18周岁及以上用户参与。</li>
+				<li>五、参与方式：<br>1. 选择轰趴所在地和喜欢的轰趴风格，拼贴轰趴创意元素，即可生成“轰趴现场”；<br>2. 填写个人信息，官方将有权自行或聘请第三方挑选最具创意的10组“轰趴现场”，并电话通知中奖者告知具体信息；<br>3. 中奖者将免费获得由绝对伏特加提供的“轰趴套餐”（含免费酒水及豪华轰趴馆使用权一次）。</li>
+				<li>六、活动须知：<br>1. 活动主办方将在2016年9月9日（含该日）前，通过电话与中奖者取得联系并告知具体信息。中奖者在收到电话通知后，请确认个人信息无误。若因中奖者提供了不正确的手机号码，主办方不承担相应责任，并有权将其中奖资格取消。<br>2. 同一微信ID、同一电话号码等同一联系方式多次提交的，均视作同一用户，仅享有一个中奖名额<br>3. 如用户出现以下行为，主办方有权取消用户参与活动、获得奖品的资格：<br>1) 用户在活动过程中提交了不正确的个人信息；<br>2) 任何有损活动主办方声誉以及品牌形象的行为；<br>3) 单一用户使用多个微信账号多次参与互动抽奖，主办方有权判定其为恶意刷奖用户；<br>4) 任何经主办方判定的，违反本次活动规则的参与行为。<br>4. 主办方不对因网络传输原因而导致参加者提交的信息丢失或错误承担任何责任。如遇不可抗力，包括但不限于自然灾害、天气原因、罢工、网络故障、政府临时管制、恐怖活动等因素导致本次活动因故无法进行时，主办方有权在法律允许的范围内决定取消、终止、修改或暂停本次活动。届时，主办方将另行通知相关事宜。<br>5. 活动布置及举办期间，除法律法规另有规定外，所有参加本次活动的人员发生人身财产损失，主办方不承担任何法律责任和经济责任。<br>6. 在法律允许范围内，保乐力加（中国）贸易有限公司拥有对本次活动的最终解释权。</li>
+				<li>如对上述规则存有疑问，可至绝对伏特加官方微信平台咨询。</li>
+				<li>本活动仅限18周岁以上人士参加，欲享受更尽兴，请勿驾车前往。绝对伏特加温馨提醒您：乐享美酒需理性。</li>
+				<li>任何与本细则相关的争端应首先友好协商。协商不成的，任一方可提交上海国际经济贸易仲裁委员会予以仲裁。仲裁结果是终局的，对双方具有约束力。仲裁费用由败诉方承担。</li>
+			</ul>
+		</div>
+	</div>
+	<span class="tip"><img src="assets/art/tip.png" alt=""></span>
+	<script type="text/javascript" src="assets/lib/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="src/js/share2.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			(function(i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function() {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+			ga('create', 'UA-25338682-47', 'auto');
+			ga('send', 'pageview');
+			function tracker(action) {
+				ga('send', 'event', 'HouseParty', action);
+			}
+			$('.go')[0].addEventListener('click', function() {
+				tracker('Sharing-Join');
+			}, false);
+		}
+	</script>
+</body>
+</html>

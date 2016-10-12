@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="wxm:timeline_title" content="潮人来袭，5大主题轰趴直播ing。立刻点击，一秒变身ABSOLUT轰趴现场！">
+	<meta name="wxm:appmessage_title" content="潮人混趴正在直播，等你围观！">
+	<meta name="wxm:appmessage_desc" content="潮人来袭，5大主题轰趴直播ing。立刻点击，一秒变身ABSOLUT轰趴现场！">
+	<meta name="wxm:img_url" content="https://wximg.qq.com/wxp/moment/EyrFTzYwW/img/thumb.jpg">
+	<meta name="wxm:link" content="https://wximg.qq.com/wxp/moment/EyrFTzYwW/html/index.html">
+	<title>扎堆轰趴，绝对由你</title>
+	<style type="text/css">
+		* { margin: 0;padding: 0; }
+		html, body { width: 100%;height: 100%;overflow: hidden; }
+		.container { width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: url(../img/bg.jpg) no-repeat 50% 0;background-size: cover; }
+		a { -webkit-tap-highlight-color: rgba(0,0,0,0);tap-highlight-color: rgba(0,0,0,0); }
+		.btn { width: 121px;height: 103px;display: block;margin: 92% auto 0; }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<a href="http://m.oneniceapp.com/topic/adlive?ad_id=680"><img class="btn" src="../img/button.png" alt="button"></a>
+	</div>
+	<script src="//wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.min.js"></script>
+	<script type="text/javascript">
+		var wa = new WxMoment.Analytics({
+		    projectName: "20160722absolut"
+		});
+		var share = new WxMoment.Share();
+		new WxMoment.OrientationTip();
+		$('.btn').click(function(){
+		    wa.sendEvent('click', 'button01');
+		});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.env
+.idea
+composer.lock
+phpunit.xml
+public/gitpull.php
+/vendor
+php_errors.log
+.phpstorm.meta.php
+_ide_helper.php
+11
+_ide_helper_models.php

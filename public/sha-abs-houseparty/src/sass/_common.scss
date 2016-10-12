@@ -1,0 +1,468 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// common
+html, body {
+	@include size;
+}
+
+.container {
+	@include bg('../../assets/art/bg.jpg');
+	z-index: 1;
+	.tip {
+		display: inline-block;
+		@include wh(231rem, 18rem);
+		position: absolute;
+		right: 0.1rem;
+		bottom: 0.1rem;
+		z-index: 5;
+		img {
+			@include size;
+		}
+	}
+}
+
+#p1, #p2, #p3 {
+	img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+// age confirm
+.ageConfirm {
+	z-index: 2;
+	@include bg('../../assets/art/age/age_bg.jpg');
+	// background-color: rgba(2, 5, 29, .9);
+	min-height: 100%;
+	.logo {
+		@include wh(182rem, 37rem);
+		margin-top: $mt * 1.5;
+	}
+	.p {
+		@include wh(393rem, 40rem);
+		margin-top: $mt * 5;
+	}
+	.yesNo {
+		@include wh(486rem, 287rem);
+		@include bg('../../assets/art/age/yes_no.png');
+		margin-top: $mt * 5;
+		position: relative;
+		span, a {
+			display: inline-block;
+			@include wh(190rem, 79rem);
+			position: absolute;
+			top: 1.6rem;
+			z-index: 1;
+		}
+		.yes {
+			right: 0.4rem;
+		}
+		.no {
+			left: 0.4rem;
+		}
+	}
+	.warn {
+		@include wh(233rem, 73rem);
+		margin-top: $mt * 5.6;
+	}
+}
+
+// p1
+#p1 {
+	// .logo {
+	// 	@include wh(559rem, 149rem);
+	// 	margin-top: $mt * 0.5;
+	// }
+	.t {
+		@include wh(559rem, 149rem);
+		margin-top: $mt * 0.8;
+	}
+	.content {
+		@include wh(601rem, 741rem);
+		margin-top: $mt * 0.4;
+	}
+	.text {
+		font-size: $fs;
+		color: $white;
+		line-height: 0.32rem;
+		margin-top: $mt * 0.5;
+		letter-spacing: 0.04rem;
+		span {
+			display: inline-block;
+			margin-top: 0.2rem;
+		}
+	}
+	// .construct {
+	// 	@include wh(472rem, 209rem);
+	// 	margin-top: $mt * 0.4;
+	// }
+	.arr {
+		@include wh(43rem, 34rem);
+		margin-top: $mt * 0.4;
+	}
+	.detail {
+		display: inline-block;
+		@include wh(71rem, 18rem);
+		@include bg('../../assets/art/p1/detail.png');
+		position: absolute;
+		left: 0.32rem;
+		bottom: 0.16rem;
+	}
+	.detail_float {
+		background-color: $black;
+		z-index: 6;
+		.detail_title {
+			font-size: $fs * 1.6;
+			color: $white;
+			font-weight: bold;
+			padding: 0.4rem 0.6rem;
+			border-bottom: 1px solid rgba(255,255,255,.3);
+		}
+		.inner {
+			@include wh(630rem, 542rem);
+			height: auto;
+			// @include bg('../../assets/art/p1/float_bg.png');
+			// margin-top: $mt;
+			position: relative;
+		}
+		.d_close {
+			display: inline-block;
+			@include wh(19rem, 21rem);
+			@include bg('../../assets/art/p1/close.png');
+			// position: absolute;
+			// top: 0.26rem;
+			// left: 0.36rem;
+			float: right;
+		}
+		.terms {
+			color: $white;
+			font-size: 0.17rem;
+			font-weight: bolder;
+			@include size;
+			// width: 4.7rem;
+			line-height: 0.26rem;
+			margin-top: $mt * 0.5;
+		}
+	}
+}
+.back {
+	@include wh(20rem, 35rem);
+	@include bg('../../assets/art/back.png');
+	position: absolute;
+	top: 0.4rem;
+	left: 0.3rem;
+	z-index: 3;
+}
+// p4
+#p4 {
+	min-height: 100%;
+	.logo {
+		@include wh(176rem, 37rem);
+		margin-top: $mt * 0.5;
+	}
+	.show_step {
+		@include wh(432rem, 167rem);
+		@include bg('../../assets/art/step1.png');
+		margin-top: $mt * 0.5;
+	}
+	.bj, .sh, .cd {
+		display: block;
+		@include wh(750rem, 244rem);
+		// margin-top: -$mt * 0.16;
+	}
+	.bj {
+		margin-top: $mt * 0.4;
+		@include bg('../../assets/art/p2/beijing.jpg');
+	}
+	.sh {
+		@include bg('../../assets/art/p2/shanghai.jpg');
+	}
+	.cd {
+		@include bg('../../assets/art/p2/chengdu.jpg');
+	}
+	.more_cites {
+		@include bg('../../assets/art/p2/more_cities.png');
+		@include wh(223rem, 53rem);
+		float: left;
+		margin-top: $mt * 0.3;
+	}
+	.scs {
+		@include wh(663rem, 663rem);
+		margin-top: $mt;
+		li {
+			float: left;
+			@include wh(324rem, 324rem);
+			&.scene1 {
+				@include bg('../../assets/art/p4/scene1.jpg');
+				margin-right: 0.15rem;
+				margin-bottom: 0.15rem;
+			}
+			&.scene2 {
+				@include bg('../../assets/art/p4/scene2.jpg');
+				margin-bottom: 0.15rem;
+			}
+			&.scene3 {
+				@include bg('../../assets/art/p4/scene3.jpg');
+				margin-right: 0.15rem;
+			}
+			&.scene4 {
+				@include bg('../../assets/art/p4/scene4.jpg');
+			}
+		}
+	}
+	.name_party {
+		form {
+			position: relative;
+		}
+		.underline {
+			position: absolute;
+			right: 2.1rem;
+			bottom: 0;
+			color: $white;
+			font-size: 0.54rem;
+		}
+		input {
+			@include wh(316rem, 59rem);
+			@include bg('../../assets/art/p5/name_party.png');
+			font-weight: bold;
+			display: block;
+			margin-top: $mt * 0.8;
+			color: #fff;
+			padding: 0;
+			position: relative;
+		}
+		.sub_party {
+			display: block;
+			@include wh(379rem, 92rem);
+			@include bg('../../assets/art/p4/sub_party.png');
+			margin-top: $mt * 0.5;
+		}
+		// .win_tip {
+		// 	@include wh(589rem, 117rem);
+		// 	margin-top: $mt * 0.6;
+		// }
+	}
+	.letsParty {
+		@include wh(586rem, 693rem);
+		margin-top: $mt * 0.5;
+		position: relative;
+		span {
+			position: absolute;
+			-webkit-transform: translateY(0);
+			transform: translateY(0);
+			&.scene {
+				@include wh(432rem, 373rem);
+				top: 0;
+				right: 0.2rem;
+				// @include bg('../../assets/art/final/scene1.png');
+			}
+			&.theme {
+				@include wh(480rem, 415rem);
+				top: 2.9rem;
+				right: 1.1rem;
+				// @include bg('../../assets/art/final/theme1.png');
+				z-index: -1;
+			}
+			&.city {
+				@include wh(226rem, 195rem);
+				top: 4.5rem;
+				left: 0;
+				// @include bg('../../assets/art/final/city1.png');
+			}
+			&.drink {
+				@include wh(322rem, 277rem);
+				bottom: 0;
+				right: 0;
+				// @include bg('../../assets/art/final/drink1.png');
+			}
+		}
+	}
+	.your_city {
+		background: rgba(0,0,0,.9);
+		.city_title {
+			@include wh(560rem, 164rem);
+			margin-top: $mt * 5;
+		}
+		.city {
+			@include wh(460rem, 117rem);
+			background-color: $white;
+			@include bg('../../assets/art/p5/city.png');
+			font-size: $fs * 1.8;
+			color: $input-color;
+			padding: 0 0.6rem;
+			text-align: center;
+			margin-top: $mt;
+		}
+		.go_scene {
+			@include wh(301rem, 91rem);
+			@include bg('../../assets/art/p2/go_scene.png');
+			margin-top: $mt;
+		}
+		.g_close {
+			display: inline-block;
+			@include wh(19rem, 21rem);
+			@include bg('../../assets/art/p1/close.png');
+			position: absolute;
+			top: 2rem;
+			right: 1rem;
+		}
+	}
+}
+
+// p5 & p6
+.submit, .apply-container {
+	@include wh(339rem, 092rem);
+	margin-top: $mt * 0.7;
+	display: block;
+}
+.container form {
+	input {
+		@include size;
+		font-size: $fs * 1.8;
+		color: $input-color;
+		padding: 0 0.1rem 0 0.6rem;
+		// float: left;
+	}
+	.birthday {
+		display: inline-block;
+		@include wh(555rem, 137rem);
+		@include bg('../../assets/art/p5/p_tip.png');
+		background-color: $white;
+		margin-top: $mt * 0.5;
+		padding: 0.2rem 0 0 0.25rem;
+		p {
+			color: #999;
+			font-size: $fs;
+			text-align: center;
+		}
+		input {
+			float: left;
+			@include wh(130rem, 79rem);
+			// border: 2px solid $white;
+			color: $input-color;
+			font-size: $fs * 1.4;
+			padding: 0 0.56rem 0 0;
+			text-align: center;
+			&.year {
+				width: 2.25rem;
+				@include bg('../../assets/art/age/year.png');
+			}
+			&.month {
+				margin-left: 0.1rem;
+				@include bg('../../assets/art/age/month.png');
+			}
+			&.day {
+				margin-left: 0.1rem;
+				@include bg('../../assets/art/age/day.png');
+			}
+		}
+	}
+	.name, .city {
+		@include wh(555rem, 122rem);
+		background-color: $white;
+		margin-top: $mt * 0.5;
+		@include bg('../../assets/art/p5/name.png');
+		padding: 0 0.6rem;
+	}
+	.city {
+		@include bg('../../assets/art/p5/city.png');
+		margin-top: $mt * 0.5;
+	}
+	.mobile_con, .captcha, .phone {
+		@include wh(555rem, 122rem);
+		background-color: $white;
+		margin-top: $mt * 0.5;
+		input {
+			@include wh(379rem, 122rem);
+			float: left;
+			@include bg('../../assets/art/p5/mobile.png');
+		}
+		.bt {
+			display: inline-block;
+			@include wh(175rem, 122rem);
+			float: left;
+			border-left: 1px solid $input-color;
+			background: $white;
+			padding: 0.1rem;
+			span {
+				display: inline-block;
+				@include size;
+				background-color: $input-color;
+				@include bg('../../assets/art/p5/captcha_bg.png');
+			}
+		}
+	}
+	.captcha {
+		@include bg('../../assets/art/p5/captcha.png');
+	}
+}
+.msg {
+	z-index: 1;
+	// @include bg('../../assets/art/bg_msg.png');
+	background-color: rgba(0,0,0,.9);
+	.sm {
+		@include wh(493rem, 332rem);
+		margin-top: $mt * 4.6;
+	}
+	.am {
+		@include wh(378rem, 247rem);
+		margin-top: $mt * 5;
+	}
+	.gdt {
+		@include wh(399rem, 441rem);
+		margin-top: $mt * 0.5;
+	}
+}
+.float {
+	z-index: 4;
+	background-color: rgba(0,0,0,.8);
+	position: relative;
+	display: none;
+	.share_tip {
+		display: block;
+		@include wh(509rem, 191rem);
+		@include bg('../../assets/art/p4/share_tip.png');
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+.invite {
+	display: block;
+	@include wh(339rem, 92rem);
+	@include bg('../../assets/art/p5/invite.png');
+	margin-top: $mt * 1.2;
+}
+.gotobuy {
+	display: block;
+	@include wh(339rem, 92rem);
+	@include bg('../../assets/art/p5/gotobuy.png');
+	margin-top: $mt * 0.5;
+}
+// p5
+#p5 {
+	min-height: 100%;
+	.t {
+		@include wh(399rem, 106rem);
+		margin-top: $mt * 1.5;
+	}
+	.apply-container {
+		position: relative;
+		margin-top: $mt * 1.5;
+	}
+	.apply {
+		display: inline-block;
+		@include size;
+		@include bg('../../assets/art/p5/apply.png');
+	}
+	.noClick {
+		display: none;
+		@include size;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+	}
+}

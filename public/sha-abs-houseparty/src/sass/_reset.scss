@@ -1,0 +1,69 @@
+/*
+ * reset
+ */
+
+@import "normalize-version";
+
+@import "normalize/links";
+
+@import "compass/reset";
+
+@import "compass/css3";
+
+@import "compass/utilities";
+
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+	@include box-sizing;
+}
+
+a {
+	text-decoration: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+img {
+	border: 0;
+	display: block;
+}
+
+input {
+	@include appearance(none);
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	&:focus {
+		outline: none;
+	}
+}
+
+span {
+	display: inline-block;
+}
+
+// iscroll
+.iScrollVerticalScrollbar.iScrollLoneScrollbar {
+	overflow: visible!important;
+	background: rgba(255, 255, 255, .4);
+	width: 3px!important;
+	right: 8px!important;
+}
+.iScrollIndicator {
+	width: 5px!important;
+	background-color: #fff!important;
+	border: 0!important;
+	border-radius: 0!important;
+	left: -1px;
+}
+
+::-webkit-input-placeholder {
+	color: #999;
+	font-weight: bold;
+}
+input:focus::-webkit-input-placeholder {
+	color:#999;
+	font-weight: bold;
+}
